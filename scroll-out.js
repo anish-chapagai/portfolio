@@ -1,3 +1,7 @@
+//Original Author from this repo https://github.com/scroll-out/scroll-out
+
+
+
 var ScrollOut = (function () {
   'use strict';
 
