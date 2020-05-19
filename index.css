@@ -1,0 +1,272 @@
+/*Scrollbar customization*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(50,50,50);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(100,100,100);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+nav{
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	line-height: 60px;
+	animation: mymove 2s 1;
+}
+@keyframes mymove{
+	from {left : -100%;}
+	to {left: 0%;}
+}
+ul{
+	padding: 0px;
+	margin: 0px;
+}
+#social{
+	background-color: rgb(50,50,50);
+	margin-top: 15px;
+	border-radius: 20px;
+	width: 35%;
+	font-size: 1.2em;
+	float: right;
+	color: rgb(200,200,150);
+	margin-right: 20px;
+}
+#social p{
+	vertical-align: middle;
+	margin-left: 1.5em;
+	display: inline;
+}
+#social li{
+	display: inline;
+	margin-right: 4%;
+	float: right;
+}
+#social img{
+	height: 30px;
+	width: 30px;
+	vertical-align: middle;
+}
+#options{
+	padding: 0.3em 1em;
+}
+#options a{
+	color: white;
+	font-size: 2.1em;
+	font-family: monospace;
+	padding: 0.3em;
+	text-decoration: none;
+}
+#options li{
+	display: inline-block;
+	margin: 1em;
+}
+#options a:hover{
+	color: rgb(90,90,90);
+	transition: 0.2s
+}
+#social img:hover{
+	width: 2em;
+	height: 2em;
+	transition: 0.5s;
+}
+main{
+	border: 1px solid black;
+	position: relative;
+	top: 6.5em;
+	background-image: url('model.jpg');
+	animation: main-animate 2s 1;
+	background-repeat: no-repeat;
+}
+main p{
+	transition: 2s;
+}
+@keyframes main-animate{
+	from{
+		right: -100%;
+	}to{
+		right: 0%;
+	}
+}
+main p{
+	color: lightsalmon;
+	font-size: 10em;
+	font-weight: bold;
+	font-family: garamond;
+	letter-spacing: 0.1em;
+	text-align: right;
+}
+#about_me{
+	padding: 10px 0px;
+	position: relative;
+	top: 65px;
+	background-color: rgb(30,30,30)
+}
+#about_me h1[data-scroll='in']{
+	opacity: 1;
+	text-align: center;
+	font-size: 50px;
+	letter-spacing: 4px;
+	color: white;
+	transition: 1s;
+}
+#about_me h1[data-scroll='out']{
+	opacity: 0;
+	transform: scaleX(0);
+}
+#about_me .description[data-scroll='in']{
+	transition: 1s;
+	opacity: 1;
+}
+#about_me .description[data-scroll='out']{
+	transform: scaleX(0);
+	opacity: 0;
+}
+#about_me .description{
+	padding-top: 10px;
+	font-size: 20px;
+	text-align: justify;	
+	font-family: monospace,'Comic Sans MS', serif;
+	margin-left: 55%;
+	margin-right: 5%;	
+}
+.vertical_line{
+	border-left: 15px solid rgb(50,100,150);
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	height: 450px;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+}
+#about_me img{
+	position: absolute;
+	width: 40%;
+	height: 60%;
+	top: 25%;
+	left: 5%;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+}
+.skills{
+	position: relative;
+	margin-top: 1em;
+	padding: 0.2em 0px;
+	color: white;
+	text-align: center;
+	font-size: 4em;
+	background: rgb(20,20,20);
+	transition-delay: 1s;
+}
+.skills p, .skills div[data-scroll='in']{
+	transform: scaleX(1);
+	transition: 1s;
+	opacity: 1;
+}
+.skills div, .skills p[data-scroll='out']{
+	transform: scaleX(0);
+	opacity: 0;
+}
+#skills-animation{
+
+}
+body{
+	background-color: rgb(0,0,0);
+	color: white;
+	margin: 0;
+	padding: 0px 10px;
+}
+
+.contact{
+	color: white;
+	font-family: 'Comix Sans MS', Georgia, sans-serif;
+	font-size: 2em;
+	text-align: center;
+	padding: 1.5em 0;
+	letter-spacing: 0.1em;
+}
+.contact p[data-scroll='in']{
+	transform: scaleX(1);
+	transition: 1s;
+	opacity: 1;
+}
+.contact p[data-scroll='out']{
+	transform: scaleX(0);
+	opacity: 0;
+}
+form{
+	font-size: 0.7em;
+	letter-spacing: 0.15em;
+	padding: 40px 0px;
+	display: inline-block;  
+}
+form input{
+	background-color: rgb(40,40,40);
+	border:0;
+	border-radius: 20px;
+	height: 30px;
+	width: 300px;
+	text-align: center;
+}
+#email{
+	margin-left: 8em;
+}
+#lname, #fname{
+	margin-left: 3.5em;
+}
+#form{
+	display: inline-block;
+}
+form textarea{
+	background-color: rgb(40,40,40);
+	width: 20em;
+	font-size: 1.5em;
+	height: 8em;
+	border-radius: 30px;
+	border: 0;
+	text-align: center;
+}
+#phone{
+	text-align: center;
+}
+#submit{
+	background-color: rgb(0,0,0);
+	border: 2px solid green;
+	font-family: cursive;
+	width: 8em;
+	color: white;
+	margin-top: 1.5em;
+}
+#submit:hover{
+	background-color: green;
+	color: black;
+	font-size: 0.7em;
+	transition: 0.3s;
+	border: 2px solid white;
+}
+.contact div[data-scroll='in']{
+	transform: scaleX(1);
+	opacity: 1;
+	transition: 2s;
+}
+.contact div[data-scroll='out']{
+	transform: scaleX(0);
+	opacity: 0;
+}
+footer{
+	background-color: rgb(10,10,10);
+	font-family: georgia;
+	font-size: 1.5em;
+	padding: 1em;
+	text-align: center;
+	letter-spacing: 0.2em;
+}
