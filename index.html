@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anish Chapagai | Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+	<script src='index.js' type="text/javascript"></script>
+</head>
+<body>
+	<nav id='top'>
+		<div id='social'>
+			<ul>
+				<p>Social Contacts</p>
+				<li><a href="https://www.facebook.com/anish.chapagai.980" ><img src="https://img.icons8.com/color/48/000000/facebook-new.png"/></a></li>
+				<li><a href="https://www.instagram.com/anis_chapagai"><img src="https://img.icons8.com/color/48/000000/instagram-new.png"/></a></li>
+				<li><a href="https://www.github.com/anish-chapagai"><img src="https://img.icons8.com/cute-clipart/64/000000/github.png"/></a></li>
+<!-- 				<li><a href="#"><img src="https://img.icons8.com/color/48/000000/gmail.png"/></a></li> -->
+				<li><a href="https://www.linkedin.com/in/anish-chapagai-6a207b17a"><img src="https://img.icons8.com/color/48/000000/linkedin.png"/></a></li>
+				<li><a href="https://www.youtube.com/channel/UCwRBY4Mgrprrr0uigY0Yc4w"><img src="https://img.icons8.com/color/48/000000/youtube-play.png"/></a></li>
+			</ul>
+		</div>
+		<div id = 'options'>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="https://www.github.com/anish-chapagai">Projects</a></li>
+				<li><a href="https://www.anishchapagai.com.np">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Academics</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+		<p>Anish<br>Chapagai</p>
+		<br>
+	</main>
+	<div id='about_me'>
+		<h1>About Me</h1>
+		<div class = 'description'>
+			<p>
+				Heil og sæl, fellow strangers!<br><br> You must have known my name from the domain itself. So, better not repeat that thing again. I am a computer engineering student at Western Regional Campus, Tribhuvan University in Nepal. I live somewhere in State No.4. I love watching movies, getting to know about physics and its freakingly cool laws. I am not much of a developer yet but I hope I would be, very soon. I love data science and web-development.<br><br>By the way, if you ever encounter me on the way to your home or to the heaven, don't be stupid to not yell at me. That's kinda boring. I'd love to learn about you.<br><br>If you want my number then unhack the democracy solving the ctf challenge. ;)<br><br>Also, Watch Vikings at least once in your tiny  little life!<br><br>Skol!
+			</p>
+		</div>
+		<p class='vertical_line'></p>
+		<!-- https://avatars2.githubusercontent.com/u/57314527?s=460&u=1880e20e00a839dcf87dbffbf243e5b7dd31d097&v=4 -->
+		<img src='https://mocah.org/uploads/posts/4545363-mr.-robot-fsociety.png'/>
+	<script src='scroll-out.js'></script>
+	<script type="text/javascript">
+		ScrollOut({
+			targets: 'h1, div' 
+		})
+	</script>
+	</div>
+	<div class='skills'>
+		<p>Skills</p>
+		<div id='skills-animation'></div>
+
+
+		<script src='scroll-out.js'></script>
+		<script type="text/javascript">
+			ScrollOut({
+				targets: 'p, div' 
+			})
+		</script>
+
+	</div>
+	<div class="contact">
+		<p>You can contact me filling this form as well.<br> It's the most reliable way.</p>
+		<form action='#'>
+			<div>
+				<label for='fname'>First Name</label>
+				<input type="text" name="fname" id='fname' placeholder="Required" required>
+				<br><br>
+				<label for='lname'>Last Name</label>
+				<input type="text" name="lname" id='lname' required placeholder="Required">
+				<br><br>
+				<label for='email'>Email</label>
+				<input type="text" name="email" id='email' required placeholder="Required">
+				<br><br>
+				<label for='phone'>Phone Number</label>
+				<input type="text" name="phone" id='phone' placeholder="Optional">
+			</div>
+			<br><br><br>
+			<div>
+				<label for='messege'>Messege  (If any)</label><br><br>
+				<!-- <input type="textarea" name="messege" id='messege' maxlength="200" placeholder="200 words only"> -->
+				<textarea maxlength="200" placeholder='200 Words only' id ='messege'></textarea>
+			</div>
+			<br>
+			<input type="submit" name="submit" id='submit'>
+		</form>
+		<script src='scroll-out.js'></script>
+		<script type="text/javascript">
+		ScrollOut({
+			targets: 'footer, p' 
+		})
+		</script>
+	</div>
+	<footer id='foot'>
+		<p>
+			Copyright &copy & made with &hearts; by Anish Chapagai
+		</p>
+	</footer>
+</body>
+</html>
