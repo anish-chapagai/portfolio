@@ -35,14 +35,8 @@ li{
 	border-radius: 20px;
 	height: 180px;
 }
-.pschool{
+.pschool, .hschool, .college{
 	animation: pschool 2s 1;
-}
-.hschool{
-	animation: hschool 2s 1;
-}
-.college{
-	animation: college 2s 1;
 }
 .left{
 	text-align: center;
