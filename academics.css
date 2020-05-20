@@ -50,29 +50,23 @@ li{
 @keyframes pschool{
 	from{
 		opacity: 0;
-		left: -100%;	
 	}to{
 		transition: 1s;
 		opacity: 1;
-		left: 0%;
 	}
 }
 @keyframes hschool{
 	from{
 		opacity: 0;
-		right: -20%;	
 	}to{
 		transition: 1s;
 		opacity: 1;
-		right: 0%;
 	}
 }
 @keyframes college{
 	from{
 		opacity: 0;
-		bottom: 100%;	
 	}to{
 		opacity: 1;
-		bottom: 0%;
 	}
 }
