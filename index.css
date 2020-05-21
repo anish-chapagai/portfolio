@@ -62,7 +62,7 @@ ul{
 }
 #options a{
 	color: white;
-	font-size: 2.1em;
+	font-size: 1.5em;
 	font-family: monospace;
 	padding: 0.3em;
 	text-decoration: none;
@@ -151,6 +151,7 @@ main p{
 	position: absolute;
 	top: 35%;
 	left: 50%;
+
 }
 #about_me img{
 	position: absolute;
