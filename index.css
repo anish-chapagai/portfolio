@@ -83,9 +83,11 @@ main{
 	border: 1px solid black;
 	position: relative;
 	top: 6.5em;
-	background-image: url('model.jpg');
+	background-image: url('https://cdna.artstation.com/p/assets/images/images/012/152/646/large/mina-song-ragnar-and-largetha-20.jpg?1533299538');
 	animation: main-animate 2s 1;
 	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
 }
 main p{
 	transition: 2s;
