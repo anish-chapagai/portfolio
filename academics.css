@@ -6,42 +6,39 @@ body{
 a{
 	text-decoration: none;
 	color: rgb(100,200,100);
-	vertical-align: center;
 }
 a:hover{
 	color: rgb(50,10,100);
 	transition: 0.5s;
 }
 li:hover{
-		background-color: rgb(0,100,0);
-		border: 2px solid purple;
-		transition: 0.5s;
-		color: aqua;
+	background-color: rgb(0,100,0);
+	border: 2px solid purple;
+	color: aqua;
+	transition: 0.5s;
 }
 h1{
 	text-align: center;
 	font-family: helvetica;
 	letter-spacing: 0.2em;
 }
-h2{
-	color: ;
-}
 li{
 	border: 2px solid lightgreen;
 	width: 30%;
+	height: auto;
 	margin: 5% 5%;
+	padding: 1em 1em;
 	display: inline-block;
 	background-color: rgb(20,20,20);
 	border-radius: 20px;
-	height: 180px;
 }
 .pschool, .hschool, .college{
-	animation: pschool 2s 1;
+	animation: school 2s 1;
 }
 .left{
 	text-align: center;
 }
-@keyframes pschool{
+@keyframes school{
 	from{
 		opacity: 0;
 	}to{
@@ -49,19 +46,19 @@ li{
 		opacity: 1;
 	}
 }
-@keyframes hschool{
-	from{
-		opacity: 0;
-	}to{
-		transition: 1s;
-		opacity: 1;
-	}
+button{
+	padding: 1em;
+	background-color: olive;
+	color: white;
+	border-radius: 1em;
+	font-size: 0.6em;
+	float: right;
+	margin: 3% 5%;
 }
-@keyframes college{
-	from{
-		opacity: 0;
-	}to{
-		transition: 1s;
-		opacity: 1;
+button:hover{
+		border: 2px solid white;
+		background-color: red;
+		transition: 0.5s;
+		color: black;
+		padding: 1.1em;
 	}
-}
