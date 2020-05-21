@@ -19,6 +19,7 @@ nav{
 	background-color: black;
 	position: fixed;
 	width: 100%;
+	height: auto;
 	z-index: 2;
 	line-height: 60px;
 	animation: mymove 2s 1;
@@ -106,6 +107,7 @@ main p{
 	font-family: garamond;
 	letter-spacing: 0.1em;
 	text-align: right;
+	opacity: 0.2;
 }
 #about_me{
 	padding: 10px 0px;
@@ -145,19 +147,22 @@ main p{
 	border-left: 15px solid rgb(50,100,150);
 	border-top-right-radius: 30px;
 	border-bottom-left-radius: 30px;
-	height: 30em;
+	height: 50%;
 	position: absolute;
-	top: 25%;
+	top: 35%;
 	left: 50%;
 }
 #about_me img{
 	position: absolute;
 	width: 40%;
-	height: 60%;
-	top: 25%;
+	height: auto;
+	top: 30%;
 	left: 5%;
 	border-top-right-radius: 100px;
 	border-bottom-left-radius: 100px;
+}
+#about_me p{
+	font-size: 0.7em;
 }
 #about_me p[data-scroll='in']{
 	animation: democracy 1s 1;
