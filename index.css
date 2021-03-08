@@ -231,7 +231,7 @@ form{
 	font-size: 0.7em;
 	letter-spacing: 0.15em;
 	padding: 40px 0px;
-	display: inline-block;  
+	display: inline-block;
 }
 form input{
 	background-color: rgb(40,40,40);
@@ -240,13 +240,6 @@ form input{
 	height: 30px;
 	width: 300px;
 	text-align: center;
-}
-#email{
-	
-}
-#fname{
-}
-#form{
 }
 form textarea{
 	background-color: rgb(40,40,40);
@@ -265,15 +258,15 @@ form textarea{
 	border: 2px solid green;
 	font-family: cursive;
 	width: 8em;
-	color: white;
+	color: green;
 	margin-top: 1.5em;
 }
 #submit:hover{
 	background-color: green;
-	color: black;
+	color: white;
 	font-size: 0.7em;
 	transition: 0.3s;
-	border: 2px solid white;
+	border: 2px solid green;
 }
 .contact div[data-scroll='in']{
 	transform: scaleX(1);
@@ -291,4 +284,37 @@ footer{
 	padding: 1em;
 	text-align: center;
 	letter-spacing: 0.2em;
+}
+.onclic {
+  width: 40px;
+  border-color:$gray;
+  border-width:3px;
+  font-size:0;
+  border-left-color:$green;
+  animation: rotating 2s 0.25s linear infinite;
+
+  &:after {
+    content:"";
+  }
+  &:hover {
+    color:$green;
+    background: white;
+  }
+}
+.validate {
+  font-size:13px;
+  color: white;
+  background: $green;
+  &:after {
+    font-family:'FontAwesome';
+    content:"\f00c";
+  }
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

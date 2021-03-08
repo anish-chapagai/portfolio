@@ -95,3 +95,26 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+function clicked(){
+  if (!document.getElementById('fname').value){
+    return false;
+  }
+  var txt="Submitted";
+  var i = 0;
+  document.getElementById("submit").value = '';
+  function click(){
+    if (i < txt.length){ 
+      setTimeout(function(){
+        document.getElementById("submit").style.color = "green";
+        document.getElementById("submit").value += txt.charAt(i);
+        i++;
+        click();
+      },100); 
+    }
+  }
+  click();
+  setTimeout(function(){
+    document.getElementById("submit").value = '';
+    document.getElementById("submit").value = "Submit";
+  },5000)
+}
