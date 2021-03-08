@@ -242,13 +242,11 @@ form input{
 	text-align: center;
 }
 #email{
-	margin-left: 8em;
+	
 }
-#lname, #fname{
-	margin-left: 3.5em;
+#fname{
 }
 #form{
-	display: inline-block;
 }
 form textarea{
 	background-color: rgb(40,40,40);
