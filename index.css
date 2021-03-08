@@ -15,6 +15,9 @@
   background: #555;
 }
 
+html{
+	scroll-behavior: smooth;
+}
 nav{
 	background-color: black;
 	position: fixed;
@@ -81,10 +84,11 @@ ul{
 	transition: 0.5s;
 }
 main{
+	font-size: 0.8em;
 	border: 1px solid black;
 	position: relative;
 	top: 6.5em;
-	background-image: url('https://cdna.artstation.com/p/assets/images/images/012/152/646/large/mina-song-ragnar-and-largetha-20.jpg?1533299538');
+	background-image: url('https://c4.wallpaperflare.com/wallpaper/476/177/94/anime-naruto-itachi-uchiha-wallpaper-preview.jpg');
 	animation: main-animate 2s 1;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -234,6 +238,7 @@ form{
 	display: inline-block;
 }
 form input{
+	color: white;
 	background-color: rgb(40,40,40);
 	border:0;
 	border-radius: 20px;
@@ -242,6 +247,7 @@ form input{
 	text-align: center;
 }
 form textarea{
+	color: white;
 	background-color: rgb(40,40,40);
 	width: 20em;
 	font-size: 1.5em;
@@ -284,37 +290,4 @@ footer{
 	padding: 1em;
 	text-align: center;
 	letter-spacing: 0.2em;
-}
-.onclic {
-  width: 40px;
-  border-color:$gray;
-  border-width:3px;
-  font-size:0;
-  border-left-color:$green;
-  animation: rotating 2s 0.25s linear infinite;
-
-  &:after {
-    content:"";
-  }
-  &:hover {
-    color:$green;
-    background: white;
-  }
-}
-.validate {
-  font-size:13px;
-  color: white;
-  background: $green;
-  &:after {
-    font-family:'FontAwesome';
-    content:"\f00c";
-  }
-}
-@keyframes rotating {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
