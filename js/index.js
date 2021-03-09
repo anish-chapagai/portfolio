@@ -31,10 +31,11 @@ function draw() {
   check_border();
   
   make_line();
-  noStroke();
+    noStroke();
   arc(pc.x,pc.y,pc.radius, pc.radius,pc.startx,pc.stopx);
   
   //Movement algorithm
+  
   pacman();
   pacman_border()
   pc.x += pc.xvel;
@@ -67,9 +68,7 @@ function check_border(){
     e.flag = false;
     e.y += e.d;
   }
-  //---------------------------
-
-
+  //-------------------------
   //-----------y border---------------
   if(e.y > 200)
     e.y = e.d+e.origy;
@@ -78,7 +77,7 @@ function check_border(){
   else
     e.xvel = 8;
 }
-//-----------------------------------
+
 function pacman(){
   if(pc.startx >= 0.7)
     flag=false;

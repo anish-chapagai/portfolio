@@ -1,0 +1,77 @@
+body{
+	background-color: black;
+	font-size: 1.5em;
+	color: white;
+}
+a{
+	text-decoration: none;
+	color: rgb(100,200,100);
+}
+a:hover{
+	color: rgb(50,10,100);
+	transition: 0.5s;
+}
+li:hover{
+	background-color: rgb(0,100,0);
+	border: 2px solid rgb(0,100,0);
+	color: aqua;
+	transition: 0.5s;
+}
+h1{
+	text-align: center;
+	font-family: helvetica;
+	letter-spacing: 0.2em;
+}
+li{
+	border: 2px solid lightgreen;
+	width: 30%;
+	height: auto;
+	margin: 5% 5%;
+	padding: 1em 1em;
+	display: inline-block;
+	background-color: rgb(20,20,20);
+	border-radius: 20px;
+}
+.pschool, .hschool, .college{
+	animation: school 2s 1;
+	text-align: center;
+}
+.pschool{
+	float:left;
+}
+.hschool{
+	float: right;
+}
+.college{
+	float: left;
+}
+.left{
+	text-align: center;
+}
+@keyframes school{
+	from{
+		opacity: 0;
+	}to{
+		transition: 1s;
+		opacity: 1;
+	}
+}
+button{
+	padding: 1em;
+	background-color: rgb(30,40,30);
+	color: white;
+	border-top-left-radius: 2em;
+	border-bottom-right-radius: 2em;
+	font-size: 0.6em;
+	float: right;
+	margin: 3% 5%;
+	transition: 0.3s;
+}
+button:hover{
+		border: 2px solid green;
+		background-color: green;
+		transition: 0.3s;
+		color: white;
+		font-weight: 1em;
+		padding: 1.1em;
+	}
